@@ -3,6 +3,18 @@
 # jose02703@gmail.com
 #UDP SOCKETS 
 
+
+#A UDP client and server program for communication using Python sockets.
+#The program can also be run in separate computer. Client has to know server's IP and port number in order to communicate. 
+#Client will send 10 "ping" and the Server will return 10 "PING" capitalized. 
+#In UDP is not a reliable protocol, so some packages may get lost. 
+#Client waits one second for a packet, after that the client assumes that the package was lost. 
+#At the end of the program, we get stats such as RTT(round trip time- the time for a message to go from client to server and back to client).
+#Also, the average RTT for each message and other interesting stats.  
+
+
+
+
 import socket
 	# We will need the following module to generate randomized lost packets 
 import random
